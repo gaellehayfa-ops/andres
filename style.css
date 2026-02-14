@@ -1,0 +1,330 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #1e4d6b;
+    --secondary: #4a7c9e;
+    --accent: #d4a574;
+    --light: #f8f6f2;
+    --white: #ffffff;
+    --text: #333333;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: var(--text);
+    background: var(--light);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Header */
+header {
+    background: var(--white);
+    padding: 2rem 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+.logo {
+    font-family: 'Merriweather', serif;
+    font-size: 2rem;
+    color: var(--primary);
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+}
+
+.tagline {
+    color: var(--secondary);
+    font-size: 0.95rem;
+    font-weight: 400;
+}
+
+/* Hero */
+.hero {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+    color: var(--white);
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    opacity: 0.95;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.whatsapp-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    background: #25D366;
+    color: var(--white);
+    padding: 1rem 2.5rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.1rem;
+    transition: all 0.3s;
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+}
+
+.whatsapp-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 25px rgba(37, 211, 102, 0.4);
+    background: #22c55e;
+}
+
+.whatsapp-icon {
+    width: 28px;
+    height: 28px;
+    fill: currentColor;
+}
+
+/* Services */
+.services {
+    padding: 4rem 0;
+    background: var(--white);
+}
+
+.section-title {
+    font-family: 'Merriweather', serif;
+    font-size: 2rem;
+    color: var(--primary);
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.service-item {
+    text-align: center;
+    padding: 2rem 1.5rem;
+    background: var(--light);
+    border-radius: 12px;
+    transition: all 0.3s;
+    border: 2px solid transparent;
+}
+
+.service-item:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.service-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.service-item h3 {
+    font-family: 'Merriweather', serif;
+    color: var(--primary);
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.service-item p {
+    font-size: 0.95rem;
+    color: #666;
+}
+
+/* Contact */
+.contact {
+    background: var(--primary);
+    color: var(--white);
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.contact h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.contact p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    opacity: 0.95;
+}
+
+.phone-display {
+    display: inline-block;
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 1.5rem;
+    padding: 1rem 2rem;
+    background: rgba(255,255,255,0.1);
+    border-radius: 12px;
+}
+
+/* Footer */
+footer {
+    background: #1a3d52;
+    color: var(--white);
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 1.5rem;
+    }
+
+    header {
+        padding: 1.5rem 0;
+    }
+
+    .logo {
+        font-size: 1.6rem;
+    }
+
+    .tagline {
+        font-size: 0.85rem;
+    }
+
+    .hero {
+        padding: 3rem 0;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .whatsapp-btn {
+        padding: 0.9rem 2rem;
+        font-size: 1rem;
+    }
+
+    .whatsapp-icon {
+        width: 24px;
+        height: 24px;
+    }
+
+    .services {
+        padding: 3rem 0;
+    }
+
+    .section-title {
+        font-size: 1.6rem;
+        margin-bottom: 2rem;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .service-item {
+        padding: 1.5rem 1rem;
+    }
+
+    .service-icon {
+        font-size: 2.5rem;
+    }
+
+    .service-item h3 {
+        font-size: 1.1rem;
+    }
+
+    .service-item p {
+        font-size: 0.9rem;
+    }
+
+    .contact {
+        padding: 3rem 0;
+    }
+
+    .contact h2 {
+        font-size: 1.6rem;
+    }
+
+    .contact p {
+        font-size: 1rem;
+    }
+
+    .phone-display {
+        font-size: 1.3rem;
+        padding: 0.8rem 1.5rem;
+    }
+
+    footer {
+        padding: 1.5rem 0;
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 1.4rem;
+    }
+
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero p {
+        font-size: 0.95rem;
+    }
+
+    .whatsapp-btn {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.95rem;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .section-title {
+        font-size: 1.4rem;
+    }
+
+    .phone-display {
+        font-size: 1.1rem;
+        padding: 0.7rem 1rem;
+    }
+
+    .services-grid {
+        gap: 1rem;
+    }
+}
+
+/* Tablet specific */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
